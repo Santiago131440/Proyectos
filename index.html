@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Santiago Sterling - Portafolio de Proyectos | Desarrollador Full Stack</title>
+    <meta name="description" content="Portafolio profesional de Santiago Sterling - Desarrollador Full Stack especializado en Excel VBA, JavaScript, React y soluciones web innovadoras.">
+    <meta name="keywords" content="desarrollo web, VBA, Excel, JavaScript, React, Node.js, Python, portafolio, Santiago Sterling, desarrollador full stack">
+    <meta name="author" content="Santiago Sterling">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santiago-sterling.com/">
+    <meta property="og:title" content="Santiago Sterling - Portafolio de Proyectos">
+    <meta property="og:description" content="Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/98182135?v=4">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://santiago-sterling.com/">
+    <meta property="twitter:title" content="Santiago Sterling - Portafolio de Proyectos">
+    <meta property="twitter:description" content="Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras">
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/98182135?v=4">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/98182135?v=4">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Santiago Sterling",
+      "jobTitle": "Desarrollador Full Stack",
+      "description": "Profesional apasionado por la tecnología y la innovación",
+      "url": "https://santiago-sterling.com",
+      "image": "https://avatars.githubusercontent.com/u/98182135?v=4",
+      "sameAs": [
+        "https://linkedin.com/in/santiago-sterling",
+        "https://github.com/Santiago131440"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cali",
+        "addressCountry": "Colombia"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="#" class="logo" onclick="navigateTo('home')" aria-label="Inicio - Proyectos">Proyectos</a>
+                <div class="search-box">
+                    <span class="search-icon"><i class="fi fi-rr-search"></i></span>
+                    <input type="text" placeholder="Explorar proyectos..." aria-label="Buscar proyectos">
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a href="#" class="nav-item" data-page="home" onclick="navigateTo('home')" aria-label="Inicio">
+                    <span class="nav-icon"><i class="fi fi-rr-home"></i></span>
+                    <span></span>
+                </a>
+                <a href="#" class="nav-item" data-page="network" onclick="navigateTo('network')" aria-label="Red">
+                    <span class="nav-icon"><i class="fi fi-rr-users"></i></span>
+                    <span></span>
+                    <span class="notification-badge">2</span>
+                </a>
+                <a href="#" class="nav-item" data-page="jobs" onclick="navigateTo('jobs')" aria-label="Empleos">
+                    <span class="nav-icon"><i class="fi fi-rr-briefcase"></i></span>
+                    <span></span>
+                </a>
+                <a href="#" class="nav-item" onclick="toggleChat()" aria-label="Mensajes">
+                     <span class="nav-icon"><i class="fi fi-rr-comment"></i></span>
+                    <span></span>
+                    <span class="notification-badge">1</span>
+                </a>
+                <a href="#" class="nav-item" data-page="profile" onclick="navigateTo('profile')" aria-label="Perfil">
+                    <span class="nav-icon"><i class="fi fi-rr-user"></i></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="page active" id="home-page">
+        <div class="main-container">
+            <!-- Sidebar Left -->
+            <aside class="sidebar-left" role="complementary">
+                <div class="card profile-card">
+                    <div class="profile-cover"></div>
+                    <div class="profile-avatar">
+                        <img src="https://avatars.githubusercontent.com/u/98182135?v=4" alt="Santiago Sterling" loading="lazy">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name" onclick="navigateTo('profile')">Santiago Sterling</div>
+                        <div class="profile-headline">Profesional | Desarrollador | Innovador</div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span>Conexiones</span>
+                            <span class="stat-number">84</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Visitas del perfil</span>
+                            <span class="stat-number">21</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 12px;">
+                    <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px;">
+                        <strong>Accesos rápidos</strong>
+                    </div>
+                    <div class="stat-item" onclick="window.open('https://santiago-sterling-portfolio.com', '_blank')">
+                        <span>Portafolio</span>
+                    </div>
+                    <div class="stat-item" onclick="window.open('https://github.com/Santiago131440', '_blank')">
+                        <span>Repositorio</span>
+                    </div>
+                    <div class="stat-item" onclick="window.open('https://linkedin.com/in/santiago-sterling', '_blank')">
+                        <span>LinkedIn</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Feed -->
+            <main class="feed" role="main">
+                <!-- Filters -->
+                <div class="card filters-card">
+                    <div class="filters">
+                        <button class="filter-btn active" onclick="filterProjects('all')" data-filter="all">
+                            Todos los Proyectos
+                        </button>
+                        <button class="filter-btn" onclick="filterProjects('excel')" data-filter="excel">
+                            Excel/VBA
+                        </button>
+                        <button class="filter-btn" onclick="filterProjects('web')" data-filter="web">
+                            Desarrollo Web
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Create Post -->
+                <div class="card create-post-card">
+                    <div class="create-post-input">
+                        <div class="create-post-avatar">
+                            <img src="https://avatars.githubusercontent.com/u/98182135?v=4" alt="Tu avatar" loading="lazy">
+                        </div>
+                        <input type="text" placeholder="Iniciar una publicación" onclick="createNewPost()" aria-label="Crear nueva publicación">
+                    </div>
+                    <div class="create-post-actions">
+                        <button class="post-action-btn" onclick="createPostWithImages()" aria-label="Agregar foto">
+                            <span class="post-action-icon"><i class="fi fi-rr-camera"></i></span>
+                            <span>Foto</span>
+                        </button>
+                        <button class="post-action-btn" aria-label="Agregar video">
+                            <span class="post-action-icon"><i class="fi fi-rr-video-camera"></i></span>
+                            <span>Video</span>
+                        </button>
+                        <button class="post-action-btn" aria-label="Agregar documento">
+                            <span class="post-action-icon"><i class="fi fi-rr-document"></i></span>
+                            <span>Doc</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Feed Posts - EDITABLE DESDE HTML -->
+                <div id="feed-posts">
+                    <!-- Post 1 - Sterling Music Player -->
+                    <div class="card post-card" 
+                         data-author="Sterling Music Player"
+                         data-avatar="https://avatars.githubusercontent.com/u/98182135?v=4"
+                         data-headline="HTML | CSS | JavaScript | Tailwind CSS"
+                         data-time="2025"
+                         data-category="web"
+                         data-content="Reproductor de música online que permite cargar archivos desde el dispositivo y reproducirlos en el navegador. Interfaz moderna y responsive, con controles intuitivos y visualización de ondas de audio. ⚡ Tecnologías: HTML5, CSS3, JavaScript vanilla, Tailwind CSS. 🎯 Resultado: Experiencia de usuario fluida y diseño adaptable a cualquier dispositivo."
+                         data-images="https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/SterlingMusicMovil1.jpeg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/SterlingMusicMovil2.jpeg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/SterlingMusicPC2.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/SterlingMusicPC1.jpg?raw=true"
+                         data-github="https://github.com/Santiago131440/sterling-music"
+                         data-demo="https://sterling-music.netlify.app"
+                         data-likes="389"
+                         data-comments="67"
+                         data-shares="23"
+                         data-hasliked="true">
+                    </div>
+
+                    <!-- Post 2 - Comparación de OP -->
+                    <div class="card post-card" 
+                         data-author="Sistema de Comparación de Datos"
+                         data-avatar="https://avatars.githubusercontent.com/u/98182135?v=4"
+                         data-headline="Excel | VBA | Automatización"
+                         data-time="2025"
+                         data-category="excel"
+                         data-content="Sistema que permite cargar archivos de Excel sin restricciones y compararlos para detectar coincidencias, diferencias e inconsistencias. Optimiza el análisis de datos al mejorar la trazabilidad, reducir errores manuales y agilizar la gestión de información. ⚡ Tecnologías: Excel VBA, Macros personalizadas. 🎯 Resultado: Reducción del 70% en tiempo de análisis de datos y eliminación de errores manuales."
+                         data-images="https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%201.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%202.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%203.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%204.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%205.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%206.jpg?raw=true,https://github.com/Santiago131440/Imagenes-Comparaci-n-de-datos/blob/main/Imagen%207.jpg?raw=true"
+                         data-github="https://github.com/Santiago131440/comparacion-excel"
+                         data-likes="389"
+                         data-comments="67"
+                         data-shares="23"
+                         data-hasliked="true">
+                    </div>
+
+                    <!-- Post 3 - Control de Inventario -->
+                    <div class="card post-card" 
+                         data-author="Control de Inventario Inteligente"
+                         data-avatar="https://avatars.githubusercontent.com/u/98182135?v=4"
+                         data-headline="Excel | VBA | Gestión de Datos"
+                         data-time="2025"
+                         data-category="excel"
+                         data-content="Sistema integral en Excel con macros y VBA para gestionar inventarios. Permite registrar productos, controlar ingresos y salidas, consultar stock en tiempo real, generar reportes automáticos y elaborar pedidos al almacén, asegurando trazabilidad y eficiencia. ⚡ Tecnologías: Excel VBA, UserForms, Bases de datos relacionales. 🎯 Resultado: Control 100% automatizado, reportes en tiempo real y reducción del 85% en errores de inventario."
+                         data-images="https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen1.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen2.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen3.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen4.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen5.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen6.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen7.png?raw=true,https://github.com/Santiago131440/Inventario-de-consumibles-imagenes-paso-a-paso./blob/main/Imagen8.png?raw=true"
+                         data-github="https://github.com/Santiago131440/inventario-vba"
+                         data-likes="268"
+                         data-comments="34"
+                         data-shares="15"
+                         data-hasliked="false">
+                    </div>
+
+                    <!-- Post 4 - Ejemplo con proyecto web -->
+                    <div class="card post-card" 
+                         data-author="Ana García"
+                         data-avatar="https://i.pravatar.cc/150?img=5"
+                         data-headline="CEO en TechStart | Emprendedora"
+                         data-time="2h"
+                         data-category="web"
+                         data-content="Emocionada de compartir que nuestra startup ha alcanzado los 10,000 usuarios activos! 🚀 Esto es solo el comienzo. Gracias a todo el equipo por su dedicación y esfuerzo. #Startup #Emprendimiento #Tecnología"
+                         data-images="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800,https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800,https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800"
+                         data-likes="234"
+                         data-comments="42"
+                         data-shares="15"
+                         data-hasliked="false">
+                    </div>
+
+                    <!-- Post 5 - Ejemplo desarrollo -->
+                    <div class="card post-card" 
+                         data-author="Carlos Rodríguez"
+                         data-avatar="https://i.pravatar.cc/150?img=12"
+                         data-headline="Desarrollador Full Stack | JavaScript Enthusiast"
+                         data-time="5h"
+                         data-category="web"
+                         data-content="Después de 6 meses de trabajo, finalmente lancé mi primera aplicación móvil! 📱 Una experiencia de aprendizaje increíble. #DesarrolloMovil #React #JavaScript"
+                         data-images="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800,https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800"
+                         data-likes="156"
+                         data-comments="28"
+                         data-shares="8"
+                         data-hasliked="false">
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="card cta-section">
+                    <h2>¿Te interesan mis proyectos?</h2>
+                    <p>Estoy abierto a nuevas oportunidades y colaboraciones</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="window.location.href='mailto:santiago.sterling@example.com'">
+                            📧 Contáctame
+                        </button>
+                        <button class="btn-secondary" onclick="window.open('https://github.com/Santiago131440', '_blank')">
+                            💻 Ver más proyectos
+                        </button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar Right -->
+            <aside class="sidebar-right" role="complementary">
+                <div class="card news-card">
+                    <div class="news-header">Tecnologías destacadas</div>
+                    <div class="news-item">
+                        <div class="news-title">JavaScript & React</div>
+                        <div class="news-meta">Desarrollo web moderno</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Excel VBA</div>
+                        <div class="news-meta">Automatización de procesos</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Node.js</div>
+                        <div class="news-meta">Backend & APIs</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Python</div>
+                        <div class="news-meta">Data Science & Automation</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Git & GitHub</div>
+                        <div class="news-meta">Control de versiones</div>
+                    </div>
+                </div>
+
+                <div style="font-size: 11px; color: var(--text-secondary); padding: 16px; text-align: center;">
+                    <div style="margin-bottom: 8px;">
+                        <a href="#" style="color: var(--text-secondary); margin: 0 8px;">Acerca de</a>
+                        <a href="#" style="color: var(--text-secondary); margin: 0 8px;">Accesibilidad</a>
+                        <a href="#" style="color: var(--text-secondary); margin: 0 8px;">Centro de ayuda</a>
+                    </div>
+                    <div>Santiago Sterling © 2026</div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="page" id="profile-page">
+        <div class="main-container">
+            <div style="grid-column: 1 / -1;">
+                <div class="profile-page-header">
+                    <div class="profile-banner"></div>
+                    <div class="profile-main-info">
+                        <div class="profile-avatar-large">
+                            <img src="https://avatars.githubusercontent.com/u/98182135?v=4" alt="Santiago Sterling" loading="lazy">
+                        </div>
+                        <div class="profile-name-large">Santiago Sterling</div>
+                        <div class="profile-headline-large">Profesional | Desarrollador Full Stack | Innovador Tecnológico</div>
+                        <div class="profile-location">📍 Cali, Colombia</div>
+                        <div style="color: var(--primary-blue); font-size: 14px; font-weight: 600;">84 conexiones</div>
+                        <div class="profile-actions">
+                            <button class="btn-primary" onclick="window.open('https://linkedin.com/in/santiago-sterling', '_blank')">LinkedIn</button>
+                            <button class="btn-secondary" onclick="window.open('https://santiago-sterling-portfolio.com', '_blank')">Portafolio</button>
+                            <button class="btn-secondary" onclick="window.open('https://github.com/Santiago131440', '_blank')">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 24px; margin-bottom: 16px;">
+                    <h2 style="font-size: 20px; margin-bottom: 16px;">Acerca de</h2>
+                    <p style="line-height: 1.6;">
+                        Profesional apasionado por la tecnología y la innovación. Con más de 5 años de experiencia en desarrollo de software, he trabajado en proyectos desafiantes que han impactado a miles de usuarios. Mi enfoque está en crear soluciones escalables y eficientes que resuelvan problemas reales.
+                    </p>
+                    <br>
+                    <p style="line-height: 1.6;">
+                        Especializado en automatización de procesos con Excel VBA y desarrollo web con tecnologías modernas. Me apasiona optimizar flujos de trabajo y crear herramientas que mejoren la productividad.
+                    </p>
+                </div>
+
+                <div class="card" style="padding: 24px; margin-bottom: 16px;">
+                    <h2 style="font-size: 20px; margin-bottom: 16px;">Experiencia</h2>
+                    <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                        <div class="job-logo">TC</div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 16px; font-weight: 600;">Desarrollador Senior</h3>
+                            <div style="font-size: 14px; margin-bottom: 4px;">Tech Company</div>
+                            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">Ene 2022 - Presente • 3 años</div>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">
+                                Liderando el desarrollo de aplicaciones web modernas usando React, Node.js y tecnologías cloud. Implementación de arquitecturas escalables y mejores prácticas de desarrollo.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 12px;">
+                        <div class="job-logo" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">ST</div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 16px; font-weight: 600;">Desarrollador Full Stack</h3>
+                            <div style="font-size: 14px; margin-bottom: 4px;">StartupTech</div>
+                            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">Jun 2020 - Dic 2021 • 1 año 7 meses</div>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">
+                                Desarrollo de features end-to-end para plataforma SaaS. Colaboración con equipos multidisciplinarios en ambiente ágil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 24px;">
+                    <h2 style="font-size: 20px; margin-bottom: 16px;">Aptitudes</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <div class="job-tag skill-tag">JavaScript</div>
+                        <div class="job-tag skill-tag">React</div>
+                        <div class="job-tag skill-tag">Node.js</div>
+                        <div class="job-tag skill-tag">Excel VBA</div>
+                        <div class="job-tag skill-tag">Python</div>
+                        <div class="job-tag skill-tag">TypeScript</div>
+                        <div class="job-tag skill-tag">AWS</div>
+                        <div class="job-tag skill-tag">MongoDB</div>
+                        <div class="job-tag skill-tag">PostgreSQL</div>
+                        <div class="job-tag skill-tag">Docker</div>
+                        <div class="job-tag skill-tag">Git</div>
+                        <div class="job-tag skill-tag">Tailwind CSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Network Page -->
+    <div class="page" id="network-page">
+        <div class="main-container">
+            <div style="grid-column: 1 / -1;">
+                <div class="network-tabs">
+                    <div class="network-tab active">Conexiones</div>
+                    <div class="network-tab">Invitaciones</div>
+                    <div class="network-tab">Seguir</div>
+                </div>
+
+                <div class="connection-grid" id="connections-grid">
+                    <!-- Connections will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jobs Page -->
+    <div class="page" id="jobs-page">
+        <div class="main-container">
+            <div style="grid-column: 1 / -1;">
+                <div class="card" style="padding: 16px; margin-bottom: 16px;">
+                    <div style="font-size: 20px; font-weight: 600; margin-bottom: 16px;">Empleos recomendados para ti</div>
+                    <div style="font-size: 14px; color: var(--text-secondary);">Basados en tu perfil y búsquedas</div>
+                </div>
+
+                <div id="jobs-list">
+                    <!-- Jobs will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Detail Overlay -->
+    <div class="post-detail-overlay" id="postDetailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailAuthor">
+        <div class="post-detail-container">
+            <button class="post-detail-close" onclick="closePostDetail()" aria-label="Cerrar detalle">×</button>
+            <div class="post-detail-media">
+                <button class="media-nav-btn prev" onclick="navigateMedia(-1)" id="prevMediaBtn" aria-label="Imagen anterior">‹</button>
+                <button class="media-nav-btn next" onclick="navigateMedia(1)" id="nextMediaBtn" aria-label="Imagen siguiente">›</button>
+                <div class="photo-counter" id="photoCounter">1 / 3</div>
+                <img src="" alt="Imagen del proyecto" id="detailMediaImage" loading="lazy">
+            </div>
+            <div class="post-detail-sidebar">
+                <div class="post-header">
+                    <div class="post-avatar" id="detailAvatar"></div>
+                    <div class="post-info">
+                        <div class="post-author" id="detailAuthor">Proyecto</div>
+                        <div class="post-meta" id="detailMeta">Descripción</div>
+                    </div>
+                </div>
+                <div class="post-content" id="detailContent" style="max-height: none;">
+                    Contenido del proyecto...
+                </div>
+                <div class="project-links" id="projectLinks" style="padding: 12px 16px; display: none; gap: 8px;">
+                    <!-- Links will be added dynamically -->
+                </div>
+                <div class="post-stats">
+                    <div class="post-reactions">
+                        <div class="reaction-icons">
+                            <span class="reaction-icon like-icon"><i class="fi fi-rr-thumbs-up"></i></span>
+                            <span class="reaction-icon love-icon"><i class="fi fi-rr-heart"></i></span>
+                            <span class="reaction-icon celebrate-icon">🎉</span>
+                        </div>
+                        <span id="detailLikes">234</span>
+                    </div>
+                    <div>
+                        <span id="detailComments">42 comentarios</span>
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button class="post-action" onclick="toggleDetailLike()" aria-label="Me gusta">
+                        <span class="post-action-icon"><i class="fi fi-rr-heart"></i></span>
+                        <span>Me gusta</span>
+                    </button>
+                    <button class="post-action" aria-label="Comentar">
+                        <span class="post-action-icon"><i class="fi fi-rr-comment"></i></span>
+                        <span>Comentar</span>
+                    </button>
+                    <button class="post-action" aria-label="Compartir">
+                        <span class="post-action-icon"><i class="fi fi-rr-refresh"></i></span>
+                        <span>Compartir</span>
+                    </button>
+                </div>
+                <div class="comments-section active" style="flex: 1; overflow-y: auto;">
+                    <div class="comment">
+                        <div class="comment-avatar"><img src="https://i.pravatar.cc/150?img=8" alt="Juan Pérez" loading="lazy"></div>
+                        <div>
+                            <div class="comment-content">
+                                <div class="comment-author">Juan Pérez</div>
+                                <div class="comment-text">¡Felicidades! Muy buen trabajo 👏</div>
+                            </div>
+                            <div class="comment-time">3h • Me gusta • Responder</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar"><img src="https://i.pravatar.cc/150?img=9" alt="María Contreras" loading="lazy"></div>
+                        <div>
+                            <div class="comment-content">
+                                <div class="comment-author">María Contreras</div>
+                                <div class="comment-text">Increíble logro! Sigue así 🚀</div>
+                            </div>
+                            <div class="comment-time">2h • Me gusta • Responder</div>
+                        </div>
+                    </div>
+                    <div class="add-comment">
+                        <div class="comment-avatar">
+                            <img src="https://avatars.githubusercontent.com/u/98182135?v=4" alt="Tu avatar" loading="lazy">
+                        </div>
+                        <input type="text" placeholder="Añade un comentario..." aria-label="Agregar comentario">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget" role="complementary" aria-label="Chat">
+        <div class="chat-header" onclick="minimizeChat()">
+            <div class="chat-user-info">
+                <div class="chat-avatar">MC</div>
+                <div>
+                    <div class="chat-name">María Contreras</div>
+                    <div style="font-size: 11px; color: var(--success-green);">● En línea</div>
+                </div>
+            </div>
+            <button style="border: none; background: transparent; cursor: pointer; font-size: 20px;" onclick="event.stopPropagation(); toggleChat()" aria-label="Cerrar chat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message">
+                <div class="chat-message-avatar">MC</div>
+                <div class="chat-message-content">
+                    Hola! Vi tu publicación sobre desarrollo web. Muy interesante!
+                </div>
+            </div>
+            <div class="chat-message own">
+                <div class="chat-message-avatar">TU</div>
+                <div class="chat-message-content">
+                    Muchas gracias! Me alegra que te haya gustado
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="chat-message-avatar">MC</div>
+                <div class="chat-message-content">
+                    Deberíamos colaborar en algún proyecto 😊
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" placeholder="Escribe un mensaje..." id="chatInput" onkeypress="handleChatEnter(event)" aria-label="Escribir mensaje">
+            <button class="chat-send-btn" onclick="sendMessage()" aria-label="Enviar mensaje">Enviar</button>
+        </div>
+    </div>
+
+    <!-- Google Analytics (Replace with your ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
