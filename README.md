@@ -1,24 +1,24 @@
-# 🚀 Portafolio de Proyectos - Santiago Sterling
+# Portafolio de Proyectos - Santiago Sterling
 
 Portafolio profesional interactivo estilo LinkedIn para mostrar proyectos de desarrollo.
 
-## 📋 Características
+## Características
 
-### ✨ Mejoras Implementadas
+### Mejoras Implementadas
 
-- ✅ **Código Organizado**: CSS y JavaScript en archivos separados
-- ✅ **SEO Optimizado**: Meta tags completos para redes sociales
-- ✅ **Accesibilidad**: Atributos ARIA y soporte para lectores de pantalla
-- ✅ **Responsive Design**: Funciona en móviles, tablets y desktop
-- ✅ **Enlaces Funcionales**: Links reales a LinkedIn, GitHub y más
-- ✅ **Sistema de Filtros**: Filtra proyectos por categoría
-- ✅ **Lazy Loading**: Carga de imágenes optimizada
-- ✅ **Smooth Scrolling**: Navegación suave
-- ✅ **Dark Mode Support**: Compatible con modo oscuro del sistema
-- ✅ **Google Analytics Ready**: Preparado para analytics
-- ✅ **Seguridad**: Links externos con rel="noopener noreferrer"
+-  **Código Organizado**: CSS y JavaScript en archivos separados
+-  **SEO Optimizado**: Meta tags completos para redes sociales
+-  **Accesibilidad**: Atributos ARIA y soporte para lectores de pantalla
+-  **Responsive Design**: Funciona en móviles, tablets y desktop
+-  **Enlaces Funcionales**: Links reales a LinkedIn, GitHub y más
+-  **Sistema de Filtros**: Filtra proyectos por categoría
+-  **Lazy Loading**: Carga de imágenes optimizada
+-  **Smooth Scrolling**: Navegación suave
+-  **Dark Mode Support**: Compatible con modo oscuro del sistema
+-  **Google Analytics Ready**: Preparado para analytics
+-  **Seguridad**: Links externos con rel="noopener noreferrer"
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 proyecto/
@@ -30,7 +30,7 @@ proyecto/
 └── README.md          # Este archivo
 ```
 
-## 🎨 Cómo Personalizar
+## Cómo Personalizar
 
 ### 1. Agregar un Nuevo Proyecto
 
