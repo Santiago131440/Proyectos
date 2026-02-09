@@ -1,7 +1,5 @@
 # Portafolio de Proyectos - Santiago Sterling
 
-Portafolio profesional interactivo estilo LinkedIn para mostrar proyectos de desarrollo.
-
 ## Características
 
 ### Mejoras Implementadas
